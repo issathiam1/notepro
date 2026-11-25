@@ -41,8 +41,7 @@ security:
         ROLE_ADMIN: [ROLE_PROFESSOR, ROLE_STUDENT]
     
     access_control:
-         - { /configprof: ^/admin, roles: ROLE_ADMIN }
-         
+         - { path: ^/configprof, roles: admin@lycee-faure.fr }
         # - { path: ^/profile, roles: ROLE_USER }
 
 when@test:
